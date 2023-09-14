@@ -1357,6 +1357,14 @@ body {
   }
 }
 
+.block__input._error {
+  box-shadow: 0 0 15px red;
+}
+
+.checkbox._error .checkbox__label span {
+  box-shadow: 0 0 15px red;
+}
+
 input,
 textarea {
   padding: 13px 0 11px 23px;
