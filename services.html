@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+   />
+
+   <link rel="stylesheet" href="css/font.css" />
+   <link rel="stylesheet" href="css/style.min.css" />
+   <title>Main</title>
+   <link
+      rel="shortcut icon"
+      href=".dist/../img/favicon.png"
+      type="image/x-icon"
+   />
+</head>
+
+   <body>
+      <header class="header">
+   <div class="header__logo logo">
+      <a href="index.html" class="logo">
+         <img src=".dist/../img/logo.png" alt="Logo" />
+      </a>
+   </div>
+   <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+   </div>
+   <ul class="header__menu menu">
+      <li class="menu__item">
+         <a href="index.html" class="menu__link">Home</a>
+      </li>
+      <li class="menu__item">
+         <a href="about.html" class="menu__link">About us</a>
+      </li>
+      <li class="menu__item">
+         <a href="services.html" class="menu__link">Services</a>
+      </li>
+      <li class="menu__item">
+         <a href="investments.html" class="menu__link">Invest in cyprus</a>
+      </li>
+      <li class="menu__item">
+         <a href="migration.html" class="menu__link">Migration</a>
+      </li>
+      <li class="menu__item">
+         <a href="#contact" class="menu__link">Contuct us</a>
+      </li>
+   </ul>
+   <button data-modal class="header__btn btn" type="button">
+      Get in touch
+   </button>
+</header>
+
+      <main>
+         <section class="section services" id="services">
+   <h3 class="section__title services__title title_second">Our Services</h3>
+   <div class="services__cards">
+      <div class="card">
+         <div class="card__img">
+            <img src=".dist/../img/services/services_1.png" alt="" />
+         </div>
+         <h3 class="card__title title_third">
+            Family <br />
+            Relocation
+         </h3>
+         <p class="card__descr descr">
+            With strategic planning, we simplify the moving process so you and
+            your family can feel safe and confident.
+         </p>
+         <a href="family.html" class="card__btn btn">Find Out More</a>
+      </div>
+      <div class="card">
+         <div class="card__img">
+            <img src=".dist/../img/services/services_2.png" alt="" />
+         </div>
+         <h3 class="card__title title_third">
+            Business <br />
+            Relocation
+         </h3>
+         <p class="card__descr descr">
+            We handle the responsibility of moving your business to Cyprus, so
+            you can focus on your business goals.
+         </p>
+         <a href="business.html" class="card__btn btn">Find Out More</a>
+      </div>
+      <div class="card">
+         <div class="card__img">
+            <img src=".dist/../img/services/services_3.png" alt="" />
+         </div>
+         <h3 class="card__title title_third">
+            Investment <br />
+            plans
+         </h3>
+         <p class="card__descr descr">
+            Discover the opportunity to further enhance your business ambitions,
+            by choosing the optimal investment plan.
+         </p>
+         <a href="investments.html" class="card__btn btn">Find Out More</a>
+      </div>
+   </div>
+</section>
+ <section class="section section__contact contact" id="contact">
+   <h2 class="contact__title title_second">Contact Us</h2>
+   <div class="contact__data data">
+      <img src=".dist/../img/icons/contact_tel.png" alt="Telephone" />
+      <a href="tel:+380984395760" class="data__tel title_four"
+         >+38 098 439 57 60</a
+      >
+      <img src=".dist/../img/icons/contact_email.png" alt="Email" />
+      <a href="redkina2508@gmail.com" class="data__email title_four"
+         >redkina2508@gmail.com</a
+      >
+   </div>
+   <div class="contact__container container">
+      <form class="form" action="#">
+         <h3 class="form__title title_third">send inquiry</h3>
+         <div class="form__block block">
+            <input
+               class="block__input"
+               name="name"
+               type="text"
+               placeholder="Your Name"
+            />
+            <input
+               class="block__input"
+               name="email"
+               type="email"
+               placeholder="Email"
+            />
+         </div>
+         <div class="form__block block">
+            <input
+               class="block__input"
+               name="text"
+               type="text"
+               placeholder="Subject"
+            />
+            <input
+               class="block__input"
+               name="tel"
+               type="tel"
+               placeholder="Phone"
+            />
+         </div>
+         <textarea class="form__textarea" placeholder="Your message"></textarea>
+         <input type="checkbox" id="accord" name="answer1" value="Accord" />
+         <label for="accord"
+            ><span></span>By clicking “Submit button” you accept Conditions and
+            have read Disclaimer</label
+         >
+         <button type="button" class="form__btn btn">Submit</button>
+      </form>
+      <div class="modal__form hide">
+         <div class="modal__close" data-close>×</div>
+         <p class="title_four">
+            THANK YOU! <br /><br />
+            ONE OF OUR TEAM MEMBERS WILL GET IN TOUCH WITH YOU SOON
+         </p>
+      </div>
+   </div>
+</section>
+
+         <div class="modal">
+   <div class="modal__dialog">
+      <div class="modal__content">
+         <form action="#">
+            <div data-close class="modal__close">&times;</div>
+            <div class="modal__title title_first">
+               WE WILL CONTACT YOU AS SOON AS POSSIBLE!
+            </div>
+            <input
+               required
+               placeholder="Your name"
+               name="name"
+               type="text"
+               class="modal__input"
+            />
+            <input
+               required
+               placeholder="Your phone number"
+               name="phone"
+               type="phone"
+               class="modal__input"
+            />
+            <button class="btn modal__btn" type="button">Сall me back</button>
+         </form>
+      </div>
+   </div>
+</div>
+
+      </main>
+      <footer class="footer">
+   <div class="footer__agreement agreement">
+      <p class="agreement_descr descr">
+         © 2022 PAM Consulting. All rights reserved
+      </p>
+      <a href="#" class="agreement_descr descr">Disclaimer</a>
+      <a href="#" class="agreement_descr descr">Privacy poilcy</a>
+   </div>
+   <a href="#" class="designed descr">Who designed this website?</a>
+</footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="js/app.min.js"></script>
+   </body>
+</html>
