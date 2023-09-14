@@ -168,17 +168,17 @@
       >
    </div>
    <div class="contact__container container">
-      <form class="form" action="#">
+      <form class="form" action="#" id="form">
          <h3 class="form__title title_third">send inquiry</h3>
          <div class="form__block block">
             <input
-               class="block__input"
+               class="block__input _req"
                name="name"
                type="text"
                placeholder="Your Name"
             />
             <input
-               class="block__input"
+               class="block__input _req _email"
                name="email"
                type="email"
                placeholder="Email"
@@ -199,12 +199,21 @@
             />
          </div>
          <textarea class="form__textarea" placeholder="Your message"></textarea>
-         <input type="checkbox" id="accord" name="answer1" value="Accord" />
-         <label for="accord"
-            ><span></span>By clicking “Submit button” you accept Conditions and
-            have read Disclaimer</label
-         >
-         <button type="button" class="form__btn btn">Submit</button>
+         <div class="checkbox">
+            <input
+               class="checkbox__input _req"
+               type="checkbox"
+               id="accord"
+               name="answer1"
+               value="Accord"
+            />
+            <label class="checkbox__label" for="accord"
+               ><span></span>By clicking “Submit button” you accept Conditions
+               and have read Disclaimer</label
+            >
+         </div>
+
+         <button type="submit" class="form__btn btn">Submit</button>
       </form>
       <div class="modal__form hide">
          <div class="modal__close" data-close>×</div>
